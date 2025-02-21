@@ -44,8 +44,13 @@ function sortearAmigo() {
     let sorteados = [...amigos]; // Copia del array para el sorteo
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = ""; // Limpiar resultado anterior
+    
+
     let amigoSecreto = sorteados[Math.floor(Math.random() * sorteados.length)];
     let li = document.createElement("li");
     li.textContent = `El amigo secreto sorteado es: ${amigoSecreto}`;
     resultado.appendChild(li);
+    let lista =  document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+    amigos = [];
 }
