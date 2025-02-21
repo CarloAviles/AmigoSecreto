@@ -23,6 +23,7 @@ function agregarAmigo(){
 }
 
 function actualizarLista(){
+    
     let lista =  document.getElementById("listaAmigos");
     lista.innerHTML = "";
 
@@ -34,6 +35,7 @@ function actualizarLista(){
 }
 
 function sortearAmigo() {
+
     if (amigos.length < 2) {
         alert("Agrega al menos 2 amigos para hacer el sorteo.");
         return;
@@ -46,5 +48,4 @@ function sortearAmigo() {
     let li = document.createElement("li");
     li.textContent = `El amigo secreto sorteado es: ${amigoSecreto}`;
     resultado.appendChild(li);
-    
 }
