@@ -52,5 +52,6 @@ function sortearAmigo() {
     resultado.appendChild(li);
     let lista =  document.getElementById("listaAmigos");
     lista.innerHTML = "";
+    
     amigos = [];
 }
